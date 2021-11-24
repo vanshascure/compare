@@ -1,0 +1,9 @@
+<div class="push-notification__prompt" data-bind="visible: isVisible">
+    <div class="headline" data-bind="text: prompt.headline"></div>
+    <div class="body" data-bind="text: prompt.body"></div>
+
+    <div class="actions">
+        <button class="action primary accept" data-bind="text: prompt.accept_text, click: handleAccept"></button>
+        <a class="reject" data-bind="text: prompt.reject_text, click: handleReject" href="#"></a>
+    </div>
+</div>

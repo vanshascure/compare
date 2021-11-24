@@ -1,0 +1,64 @@
+"Redirect notification","Redirect notification"
+GeoIP,GeoIP
+"GeoIP Rules","GeoIP Rules"
+"The rule has been deleted.","The rule has been deleted."
+"This rule no longer exists.","This rule no longer exists."
+"The rule has been duplicated.","The rule has been duplicated."
+"New Rule","New Rule"
+"You saved the rule.","You saved the rule."
+"The rule has been %1.","The rule has been %1."
+"GeoLite2 Database","GeoLite2 Database"
+ip-api.com,ip-api.com
+No,No
+"Confirmation Popup","Confirmation Popup"
+"Notification Popup","Notification Popup"
+Back,Back
+"Delete Rule","Delete Rule"
+"Are you sure you want to do this?","Are you sure you want to do this?"
+"Save and Continue Edit","Save and Continue Edit"
+"Save Rule","Save Rule"
+Edit,Edit
+Duplicate,Duplicate
+Disable,Disable
+Enable,Enable
+Delete,Delete
+"Delete Rule %1","Delete Rule %1"
+"Are you sure you want to delete Rule %1 ?","Are you sure you want to delete Rule %1 ?"
+Country,Country
+"Browser Locale","Browser Locale"
+IP,IP
+"GeoIP Redirect","GeoIP Redirect"
+"Enable module","Enable module"
+"Display popup with redirect notice","Display popup with redirect notice"
+"Popup Text","Popup Text"
+"Ajax Mode","Ajax Mode"
+"The lookup source","The lookup source"
+"Debug Mode","Debug Mode"
+"IP to debug","IP to debug"
+"Ignored IPs","Ignored IPs"
+"Ignored User Agent","Ignored User Agent"
+"Process actions only on the first visit","Process actions only on the first visit"
+Name,Name
+Active,Active
+Priority,Priority
+Notes,Notes
+"When visitor","When visitor"
+"Country is","Country is"
+"Locale is","Locale is"
+"IP is","IP is"
+124.84.23.233,124.84.23.233
+"Use comma as separator","Use comma as separator"
+"Change Store View","Change Store View"
+"Change Store to","Change Store to"
+"Switch Currency","Switch Currency"
+"Switch Currency to","Switch Currency to"
+"Redirect to URL","Redirect to URL"
+"URL to redirect","URL to redirect"
+"Restrict Access","Restrict Access"
+/503,/503
+"Add New Rule","Add New Rule"
+ID,ID
+Description,Description
+Status,Status
+Conditions,Conditions
+Actions,Actions

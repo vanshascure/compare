@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mirasvit_GeoIp::geo_ip" title="GeoIP Redirect" module="Mirasvit_GeoIp"
+             resource="Mirasvit_GeoIp::geo_ip" sortOrder="15" parent="Magento_Backend::system"/>
+
+        <add id="Mirasvit_GeoIp::geo_ip_rule" title="GeoIP Rules" module="Mirasvit_GeoIp"
+             resource="Mirasvit_GeoIp::geo_ip" action="geo_ip/rule" parent="Mirasvit_GeoIp::geo_ip"/>
+    </menu>
+</config>

@@ -1,0 +1,22 @@
+{
+  "name": "mirasvit/module-geo-ip",
+  "description": "Geo IP for Magento 2",
+  "require": {
+    "mirasvit/module-core": "dev-master|>=1.2.112",
+    "geoip2/geoip2": "~2.0",
+    "magento/framework": "100.0.*|100.1.*|100.2.*|101.0.*|102.0.*|103.0.*"
+  },
+  "type": "magento2-module",
+  "version": "1.1.2",
+  "license": [
+    "proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "src/GeoIp/registration.php"
+    ],
+    "psr-4": {
+      "Mirasvit\\GeoIp\\": "src/GeoIp"
+    }
+  }
+}

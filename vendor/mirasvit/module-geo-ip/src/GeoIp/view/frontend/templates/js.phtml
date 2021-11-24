@@ -1,0 +1,10 @@
+<?php
+/** @var \Mirasvit\GeoIp\Block\Js $block */
+?>
+
+<script data-mark="mst_geoip_process" type="text/x-magento-init"><?= \Mirasvit\Core\Service\SerializeService::encode($block->getJsConfigProcess()) ?></script>
+
+<script data-mark="mst_geoip_popup" type="text/x-magento-init"><?= \Mirasvit\Core\Service\SerializeService::encode($block->getJsConfigPopup()) ?></script>
+<div data-bind="scope: 'geoIpPopup'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>

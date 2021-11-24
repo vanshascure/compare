@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="geo_ip" showInDefault="1" type="text" translate="label">
+            <label>GeoIP Redirect</label>
+            <tab>mirasvit</tab>
+            <resource>Mirasvit_GeoIp::system</resource>
+
+            <group id="general" showInDefault="1" sortOrder="5">
+                <label>General Settings</label>
+
+                <field id="is_enabled" translate="label" type="select" sortOrder="10" showInDefault="1">
+                    <label>Enable module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="popup_type" translate="label" type="select" sortOrder="20" showInDefault="1">
+                    <label>Display popup with redirect notice</label>
+                    <source_model>Mirasvit\GeoIp\Model\Source\PopupTypeSource</source_model>
+                </field>
+
+                <field id="popup_text" translate="label" type="textarea" sortOrder="30" showInDefault="1">
+                    <label>Popup Text</label>
+                    <depends>
+                        <field id="popup_type" separator=",">notification,confirmation</field>
+                    </depends>
+                </field>
+                <field id="ajax_mode" translate="label" type="select" sortOrder="40" showInDefault="1">
+                    <label>Ajax Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Recommended to enable if varnish cache is used</comment>
+                </field>
+            </group>
+
+            <group id="lookup" showInDefault="1" sortOrder="5">
+                <label>Country Lookup</label>
+
+                <field id="source" translate="label" type="select" sortOrder="10" showInDefault="1">
+                    <label>The lookup source</label>
+                    <source_model>Mirasvit\GeoIp\Model\Source\CountryLookupSource</source_model>
+                </field>
+
+                <field id="is_debug" translate="label" type="select" sortOrder="20" showInDefault="1">
+                    <label>Debug Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="debug_ip" translate="label" type="text" sortOrder="30" showInDefault="1">
+                    <label>IP to debug</label>
+                    <depends>
+                        <field id="is_debug">1</field>
+                    </depends>
+
+                    <comment>
+                        <![CDATA[
+                            64.20.55.251 - USA <br>
+                            80.70.47.234 - France <br>
+                            78.77.22.112 - Sweden <br>
+                            90.77.22.112 - Spain <br>
+                            122.160.97.235 - India <br>
+                            93.244.173.229 - German
+                        ]]>
+                    </comment>
+                </field>
+            </group>
+
+            <group id="limitations" showInDefault="1" sortOrder="10">
+                <label>Limitations</label>
+
+                <field id="ignored_ip" translate="label" type="text" sortOrder="20" showInDefault="1">
+                    <label>Ignored IPs</label>
+                </field>
+                <field id="ignored_agent" translate="label" type="text" sortOrder="30" showInDefault="1">
+                    <label>Ignored User Agent</label>
+                </field>
+
+                <field id="process_first_visit" translate="label" type="select" sortOrder="40" showInDefault="1">
+                    <label>Process actions only on the first visit</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

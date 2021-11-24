@@ -1,0 +1,1275 @@
+{
+  "BUNDLE-2833": {
+    "vertex/module-tax": {
+      "Fixes issue where Vertex-calculated tax wasn't considered when determining free shipping": {
+        ">=3.4.0 <3.5.0 || >=4.0.0 <4.2.0": {
+          "file": "os/BUNDLE-2833__Allows_Vertex_calculated_tax_to_be_included_in_free_shipping.patch"
+        }
+      }
+    }
+  },
+  "MDVA-25602": {
+    "magento/magento2-base": {
+      "Fixes issue with PayPal Payflow Pro payment method and treating cookies as SameSite=Lax by default in the Chrome 80 browser and API response redirect to customer login page": {
+        "2.3.0": {
+          "file": "os/MDVA-25602__PayflowPro_checkout_broken_with_SameSite_Cookie__2.3.0.patch"
+        },
+        ">=2.3.1 <2.3.2": {
+          "file": "os/MDVA-25602__PayflowPro_checkout_broken_with_SameSite_Cookie__2.3.1.patch"
+        },
+        ">=2.3.2 <2.3.3": {
+          "file": "os/MDVA-25602__PayflowPro_checkout_broken_with_SameSite_Cookie__2.3.2.patch"
+        },
+        ">=2.3.3 <2.3.5": {
+          "file": "os/MDVA-25602__PayflowPro_checkout_broken_with_SameSite_Cookie__2.3.4.patch"
+        }
+      }
+    },
+    "magento/magento2-ee-base": {
+      "Fixes issue with PayPal Payflow Pro payment method and treating cookies as SameSite=Lax by default in the Chrome 80 browser and API response redirect to customer login page": {
+        ">=2.3.0 <2.3.5": {
+          "file": "commerce/MDVA-25602__PayflowPro_API_response_302_redirect_to_login_page__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30052": {
+    "magento/magento2-base": {
+      "Fixes the issue with private content (local storage) not being populated correctly, which resulted in performance problems.": {
+        ">=2.3.2-p2 <2.3.5": {
+          "file": "os/MDVA-30052__customer_data_section_invalidation_logic_improvement__2.3.4-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-26694": {
+    "magento/magento2-base": {
+      "Fixes the issue with product and catalog caches expiring daily, though being scheduled to expire differently.": {
+        ">=2.3.0 <2.3.6 || 2.4.0": {
+          "file": "os/MDVA-26694__fix_product_and_catalog_cache_expiration_daily__2.3.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30131": {
+    "magento/magento2-base": {
+      "Fixes the issue with layered navigation, where the 'No' value for boolean type product attributes was not included in layered navigation if Elasticsearch was used as a search engine.": {
+        ">=2.3.4 <2.3.6 || 2.4.0": {
+          "file": "os/MDVA-30131__fix_storing_boolean_values_for_custom_attributes_in_Elastic_Search__2.3.4.patch"
+        },
+        ">=2.3.3 <2.3.4": {
+          "file": "os/MDVA-30841__fix_storing_boolean_values_for_custom_attributes_in_Elastic_Search__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-27825": {
+    "magento/magento2-base": {
+      "Fixes the issue where exporting of big amounts of data failed because of memory leak.": {
+        ">=2.3.0 <2.4.1": {
+          "file": "os/MDVA-27825__fix_memory_leak_prevent_customer_export__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29085": {
+    "magento/magento2-b2b-base": {
+      "Fixes the B2B issue where no required new company emails are sent out if a company is created by API.": {
+        ">=1.1.0 <=1.1.5-p1": {
+          "file": "commerce/MDVA-29085__fix_email_confirmation_after_company_created_via_API__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29835": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue where gift card orders contained two codes instead one.": {
+        ">2.3.1 <2.4.2": {
+          "file": "commerce/MDVA-29835__two_gift_card_codes_can_be_seen_for_the_order__2.3.4-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29344": {
+    "magento/module-page-builder": {
+      "Fixes the issue where Page Builder gets stuck after copying text from a header element to a text element.": {
+        ">=1.3.0 <=1.4.0": {
+          "file": "commerce/MDVA-29344__fix_page_builder_hangs_after_text_copying__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MC-35514": {
+    "magento/magento2-base": {
+      "Fixes the issue where merchants could not add ordered products to a package from the Admin Create Package page and save the package.": {
+        ">=2.4.0 <2.4.1": {
+          "file": "os/MC-35514__fixes_issue_with_shipping_label_creation__2.4.0.patch"
+        }
+      }
+    }
+  },
+  "MC-35984": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue where merchants could not interact with any page elements on the Returns page after creating a shipping label for a Return Merchandise Authorization (RMA).": {
+        ">=2.4.0 <2.4.1": {
+          "file": "commerce/MC-35984__fixes_issue_in_rma_edit_page_with_shipping_label__2.4.0.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30195": {
+    "magento/magento2-base": {
+      "Fixes the issue where cron jobs fail if database name is too long, resulting in categories not being updated on the frontend.": {
+        ">=2.3.1 <=2.3.4-p2": {
+          "file": "os/MDVA-30195__fix_to_handle_long_database_names__2.3.4-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30106": {
+    "magento/magento2-base": {
+      "Fixes the issue where during checkout, payments are not loaded with “Cannot read property ‘length’ of null ” error in JS console.": {
+        "^2.3.0": {
+          "file": "os/MDVA-30106__fix_validation_for_possible_null_objects_on_validation_rules__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28656": {
+    "magento/magento2-base": {
+      "Fixes the issue where if an order was placed with no payment information required (for example, with 100% discount) and an invoice was created for the order, the order status changes to Closed instead of Complete.": {
+        ">=2.3.1 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "os/MDVA-28656__fixes_order_status_issue_when_invoicing_zero_payment_orders__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30209": {
+    "magento/magento2-base": {
+      "Fixes the issue where the customer group was changed to default if customer updated their account information.": {
+        ">=2.3.0 <=2.3.3-p1": {
+          "file": "os/MDVA-30209__fixes_customer_group_id_during_account_update__2.3.0.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30123": {
+    "magento/magento2-base": {
+      "Fixes the issue where attribute option labels are not translated correctly for GraphQL queries.": {
+        ">=2.3.4 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "os/MDVA-30123__fixes_attribute_option_labels_translation_for_graphql_queries__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29996": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue where after enabling category permission, the category page is not getting cached by Full Page Cache.": {
+        ">=2.3.3 <2.4.2": {
+          "file": "commerce/MDVA-29996__fixes_page_cache_identifier_with_enabled_category_permissions_and_fpc__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30164": {
+    "magento/magento2-base": {
+      "Fixes the issue where customers records cannot be exported from the Customers grid, if custom customer attributes exist.": {
+        ">=2.3.1 <2.4.2": {
+          "file": "os/MDVA-30164__fixes_customer_export_when_custom_customer_attribute_exists__2.3.2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30444": {
+    "magento/magento2-base": {
+      "Fixes the issue where no confirmation email is sent for orders placed using GraphQL.": {
+        ">=2.3.0 <2.4.1": {
+          "file": "os/MDVA-30444__fixes_confirmation_email_not_sent_with_orders_placed_using_graphql__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30490": {
+    "magento/magento2-base": {
+      "Fixes the issue where products comparison throws the 500 error page, if one of the products has an empty short description.": {
+        ">=2.3.4 <=2.3.5-p2": {
+          "file": "os/MDVA-30490__fixes_500_error_on_product_comparison_when_having_empty_short_product_description__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30232": {
+    "magento/magento2-base": {
+      "Fixes the issue where it is not possible to re-order if the original order contains a gift card.": {
+        ">=2.3.1 <2.4.1": {
+          "file": "os/MDVA-30232__fixes_issue_with_re-order_when_order_contains_giftcard__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29965": {
+    "magento/magento2-base": {
+      "Fixes the issue where customers get Invalid Form Key error when adding a product to the cart.": {
+        ">=2.3.3 <2.4.0": {
+          "file": "os/MDVA-29965_fixes_invalid_form_key_error_when_adding_to_cart_before_page_fully_refreshes_2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30008": {
+    "magento/magento2-b2b-base": {
+      "Fixes the B2B issue where it is not possible to place orders through Admin API for a product which is in a public catalog.": {
+        ">=1.1.1 <1.2.2": {
+          "file": "commerce/MDVA-30008_fixes_order_placement_via_admin_api_for_public_catalog_products_2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-22469": {
+    "magento/magento2-base": {
+      "Fixes the issue where after upgrading to Magento 2.3.3, Page Builder is not working in the Admin panel and some JS and CSS files are not loading.": {
+        ">=2.3.2-p2 <=2.3.3-p1": {
+          "file": "os/MDVA-22469_fixes_page_builder_css_and_js_not_loading_2.3.3.patch"
+        }
+      }
+    },
+    "magento/module-page-builder": {
+      "Fixes the issue where after upgrading to Magento 2.3.3, Page Builder is not working in the Admin panel and some JS and CSS files are not loading.": {
+        ">=1.0.3 <=1.1.1": {
+          "file": "commerce/MDVA-22469_fixes_page_builder_css_and_js_not_loading_2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28191": {
+    "magento/magento2-base": {
+      "Fixes the issue where no payment methods are loaded during order creation via Magento Admin panel.": {
+        ">=2.3.3 <2.4.2": {
+          "file": "os/MDVA-28191__fixes_no_payments_during_order_creation_in_admin_panel__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29959": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where restricted admin user with 'Companies' permissions is not allowed to delete company account.": {
+        ">=1.1.0 <=1.1.3-p1": {
+          "file": "commerce/MDVA-29959__fixes_restricted_admin_permission_is_not_allowed_to_delete_company__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30265": {
+    "magento/magento2-base": {
+      "Fixes the issue where shipment tracking link stops working after Invoice creation.": {
+        ">=2.3.3 <2.4.2": {
+          "file": "os/MDVA-30265__fixes_tracking_link_redirects_to_404__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28409": {
+    "magento/magento2-base": {
+      "Fixes the issue where the 'sales_clean_quotes' cron job fails with out-of-memory error when the number of expired quotes in the database is huge.": {
+        ">=2.3.4 <2.3.6 || 2.4.0": {
+          "file": "os/MDVA-28409__cleaning_old_quotes_from_sales_clean_quotes_table__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30593": {
+    "magento/magento2-base": {
+      "Fixes the issue where quotes, that expired according to the Quote Lifetime setting, are not cleaned up.": {
+        ">=2.3.0 <2.3.4": {
+          "file": "os/MDVA-30593__cleaning_expired_quotes_from_sales_clean_quotes_table__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30107": {
+    "magento/magento2-base": {
+      "Fixes the issue where store switcher doesn't work as expected if different base URLs are used for store views.": {
+        ">=2.3.0 <2.3.5": {
+          "file": "os/MDVA-30107__fixes_store_switcher_for_different_base_url__2.3.3.patch"
+        },
+        ">=2.3.5 <2.3.6": {
+          "file": "os/MDVA-30623__fixes_store_switcher_for_different_base_url__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28763": {
+    "magento/magento2-base": {
+      "Fixes the issue where product image is getting duplicated after updating product information using REST API more than once.": {
+        ">=2.3.2 <2.3.4": {
+          "file": "os/MDVA-28763__fixes_product_image_is_getting_duplicate_using_REST_API__2.3.3.patch",
+          "replaced-with": "MDVA-28763-V2"
+        }
+      }
+    }
+  },
+  "MDVA-28763-V2": {
+    "magento/magento2-base": {
+      "Fixes the issue where product image is getting duplicated after updating product information using REST API more than once.": {
+        ">=2.3.2 <2.3.4": {
+          "file": "os/MDVA-28763__fixes_product_image_is_getting_duplicate_using_REST_API__2.3.3-p1_v3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30284": {
+    "magento/magento2-base": {
+      "Fixes the issue where Catalog Search indexer fails due to the following Elasticsearch error: `limit of total fields in index has been exceeded`.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-30284__fixes_catalog_search_indexer_fail_due_to_elasticsearch_error__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29042": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where Catalog permissions were changed to `Allow` automatically after new product was added to the shared catalog.": {
+        ">=1.1.3 <=1.1.4-p2": {
+          "file": "commerce/MDVA-29042__fixes_catalog_permission_changing_to_allow__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30428": {
+    "magento/magento2-base": {
+      "Fixes the issue where customers cannot add a product to wishlist if this product is assigned to a custom inventory source.": {
+        ">=2.3.3 <2.3.4": {
+          "file": "os/MDVA-30445__fixes_add_a_product_with_custom_inventory_to_wishlist__2.3.3.patch"
+        },
+        ">=2.3.4 <2.3.5": {
+          "file": "os/MDVA-31024__fixes_add_a_product_with_custom_inventory_to_wishlist__2.3.4-p2.patch"
+        },
+        ">=2.3.5 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "os/MDVA-30428__fixes_add_a_product_with_custom_inventory_to_wishlist__2.3.5-p1.patch"
+        }
+      }
+    },
+    "magento/inventory-metapackage": {
+      "Fixes the issue where customers cannot add a product to wishlist if this product is assigned to a custom inventory source.": {
+        ">=1.2.0 <1.2.1": {
+          "file": "os/MDVA-30428__fixes_add_a_product_with_custom_inventory_to_wishlist__1.1.5.patch"
+        }
+      }
+    },
+    "magento/inventory-composer-metapackage": {
+      "Fixes the issue where customers cannot add a product to wishlist if this product is assigned to a custom inventory source.": {
+        ">=1.1.3 <1.1.4": {
+          "file": "os/MDVA-30445__fixes_add_a_product_with_custom_inventory_to_wishlist__1.1.3.patch"
+        },
+        ">=1.1.4 <1.1.5": {
+          "file": "os/MDVA-31024__fixes_add_a_product_with_custom_inventory_to_wishlist__1.1.4.patch"
+        },
+        ">=1.1.5 <1.1.6": {
+          "file": "os/MDVA-30428__fixes_add_a_product_with_custom_inventory_to_wishlist__1.1.5.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28661": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where an error is thrown in the `Company Users` company account section after company admin is changed.": {
+        ">=1.1.0 <1.2.2": {
+          "file": "commerce/MDVA-28661__fixes_error_is_throwing_after_company_admin_changed__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28993": {
+    "magento/magento2-base": {
+      "Implements the \"Minimum should match\" functionality and partial search for Elasticsearch engine. Solves issues with hyphens in search queries.": {
+        ">=2.3.4 <2.3.6": {
+          "file": "os/MDVA-28993__implements_minimum_should_match_functionality_and_partial_search_for_elasticsearch__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30102": {
+    "magento/magento2-base": {
+      "Fixes the issue where Redis cache grows up quickly since layout caches don't have TTL.": {
+        ">=2.3.2 <2.4.2": {
+          "file": "os/MDVA-30102__fixes_issue_when_redis_cache_grows_up_quickly__2.3.5.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30599": {
+    "magento/magento2-base": {
+      "Fixes the issue where guest quotes created using API are incorrectly marked as quotes for logged in customers.": {
+        ">=2.3.4 <2.4.2": {
+          "file": "os/MDVA-30599__fixes_issue_with_API_created_guest_quotes_marked_as_logged_in_customers_quotes__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29446": {
+    "magento/magento2-base": {
+      "Fixes the issue where the price of not applicable shipping method is shown as zero during checkout.": {
+        ">=2.3.3 <2.4.2": {
+          "file": "os/MDVA-29446__fixes_issue_with_non_applicable_shipping_method_price_shown_as_zero_in_checkout__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30357": {
+    "magento/magento2-base": {
+      "Fixes the issue with wrong image URLs are created when generating a sitemap by cron.": {
+        ">=2.3.2 <2.3.5": {
+          "file": "os/MDVA-30357__fixes_issue_with_wrong_image_url_created_on_sitemap_generated_by_cron__2.3.3.patch",
+          "require": ["MCLOUD-3025"]
+        },
+        ">=2.3.5 <=2.4.0": {
+          "file": "os/MDVA-30357__fixes_issue_with_wrong_image_url_created_on_sitemap_generated_by_cron__2.3.5.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30565": {
+    "magento/magento2-base": {
+      "Fixes the issue where \"No such entity with cartid = 0\" error is displayed for guest customer on storefront checkout if persistent shopping cart is enabled.": {
+        ">=2.3.2 <=2.3.3-p1": {
+          "file": "os/MDVA-30565__fixes_no_such_entity_with_cartid_error_for_guest_customers_when_persistent_shopping_cart_is_enabled__2.3.3-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29787": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue where target rule for related products does not work when 'is one of' condition is used to define products to be displayed.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "commerce/MDVA-29787__fixes_condition_is_one_of_not_working_on_target_rules_for_related_products_2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30977": {
+    "magento/magento2-base": {
+      "Fixes the issue with random products missing from categories after reindex.": {
+        ">=2.3.4 <2.3.5": {
+          "file": "os/MDVA-30977__fixes_issue_with_missing_random_products_from_categories_after_reindex__2.3.4.patch",
+          "replaced-with": "MDVA-30977-V2"
+        },
+        ">=2.3.5 <2.4.0": {
+          "file": "os/MDVA-30977__fixes_issue_with_missing_random_products_from_categories_after_reindex__2.3.5-p1.patch",
+          "replaced-with": "MDVA-30977-V2"
+        }
+      }
+    },
+    "magento/inventory-composer-metapackage": {
+      "Fixes the issue with random products missing from categories after reindex.": {
+        ">=1.1.4 <1.2.0": {
+          "file": "os/MDVA-30977__fixes_issue_with_missing_random_products_from_categories_after_reindex__1.1.5-p1.patch",
+          "replaced-with": "MDVA-30977-V2"
+        }
+      }
+    }
+  },
+  "MDVA-30977-V2": {
+    "magento/magento2-base": {
+      "Fixes the issue with random products missing from categories after reindex.": {
+        ">=2.3.0 <2.3.3": {
+          "file": "os/MDVA-28682__fixes_issue_with_missing_random_products_from_categories_after_reindex__2.3.0.patch"
+        },
+        ">=2.3.3 <2.3.4": {
+          "file": "os/MDVA-28682__fixes_issue_with_missing_random_products_from_categories_after_reindex__2.3.3.patch"
+        },
+        ">=2.3.4 <2.3.5": {
+          "file": "os/MDVA-30977__fixes_issue_with_missing_random_products_from_categories_after_reindex__2.3.4.patch"
+        },
+        ">=2.3.5 <2.4.0": {
+          "file": "os/MDVA-30977__fixes_issue_with_missing_random_products_from_categories_after_reindex__2.3.5-p1_v4.patch"
+        },
+        ">=2.4.0 <2.4.2": {
+          "file": "os/MDVA-33068__fixes_issue_with_missing_random_products_from_categories_after_reindex__2.4.0.patch"
+        }
+      }
+    },
+    "magento/inventory-composer-metapackage": {
+      "Fixes the issue with random products missing from categories after reindex.": {
+        ">=1.1.4 <1.2.0": {
+          "file": "os/MDVA-30977__fixes_issue_with_missing_random_products_from_categories_after_reindex__1.1.5-p1_v4.patch"
+        }
+      }
+    },
+    "magento/inventory-metapackage": {
+      "Fixes the issue with random products missing from categories after reindex.": {
+        ">=1.2.0 <1.2.2": {
+          "file": "os/MDVA-33068__fixes_issue_with_missing_random_products_from_categories_after_reindex__1.2.0.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28202": {
+    "magento/magento2-base": {
+      "Fixes the issue where Layered Navigation doesn't filter configurable products correctly when MSI is used.": {
+        ">=2.3.4 <2.4.2": {
+          "file": "os/MDVA-28202__fixes_issue_with_layered_navigation_not_filtering_configurable_products_correctly_with_msi__2.3.5-p1.patch"
+        }
+      }
+    },
+    "magento/inventory-metapackage": {
+      "Fixes the issue where Layered Navigation doesn't filter configurable products correctly when MSI is used.": {
+        ">=1.2.0 <1.2.2": {
+          "file": "os/MDVA-28202__fixes_issue_with_layered_navigation_not_filtering_configurable_products_correctly_with_msi__1.1.5-p1.patch"
+        }
+      }
+    },
+    "magento/inventory-composer-metapackage": {
+      "Fixes the issue where Layered Navigation doesn't filter configurable products correctly when MSI is used.": {
+        ">=1.1.4 <1.2.0": {
+          "file": "os/MDVA-28202__fixes_issue_with_layered_navigation_not_filtering_configurable_products_correctly_with_msi__1.1.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28300": {
+    "magento/magento2-base": {
+      "Fixes the issue where GQL request doesn't reflect the price changes from catalog price rules.": {
+        ">=2.3.0 <2.3.4": {
+          "file": "os/MDVA-28300__fixes_with_graphql_not_reflecting_price_chages_from_catalog_price_rule__2.3.5-p1.patch"
+        },
+        ">=2.3.4 <2.3.6": {
+          "file": "os/MDVA-28300__fixes_with_graphql_not_reflecting_price_chages_from_catalog_price_rule__2.3.5-p1.patch",
+          "replaced-with": "MDVA-33975"
+        }
+      }
+    }
+  },
+  "MDVA-31006": {
+    "magento/magento2-base": {
+      "Fixes the issue where duplicated orders appear after placing an order using Paypal Express payment.": {
+        "2.3.0 || 2.3.1": {
+          "file": "os/MDVA-31006__fixes_issue_with_duplicated_orders_when_using_paypal_express_payment__2.3.1.patch"
+        },
+        ">=2.3.2 <2.3.3": {
+          "file": "os/MDVA-30730__fixes_issue_with_duplicated_orders_when_using_paypal_express_payment__2.3.2-p2.patch"
+        },
+        ">=2.3.3 <2.4.2": {
+          "file": "os/MDVA-31006__fixes_issue_with_duplicated_orders_when_using_paypal_express_payment__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30972": {
+    "magento/magento2-base": {
+      "Fixes the issue where custom order status was changed to Processing after partial shipment creation using WebApi.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-30972__fixes_issue_where_custom_order_status_is_changed_to_processing_after_partial_shipment_creation_via_webapi__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30594": {
+    "magento/magento2-base": {
+      "Fixes the issue where an order with multiple addresses could not be saved during checkout when FPT is configured.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-30594__fixes_issue_where_order_with_multiple_addresses_is_not_saved_during_checkout_when_fpt_is_configured__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29148": {
+    "magento/magento2-base": {
+      "Fixes the issue when creating a product via an API call, the product custom attribute of \"\\Magento\\Eav\\Model\\Entity\\Attribute\\Backend\\ArrayBackend\" (like Multiselect) type does not use its default value if no value was provided in the payload.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-29148__fixes_issue_with_product_custom_attribute_arraybackend_not_using_default_value_if_value_is_not_provided_in_api_payload__2.3.3-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30837": {
+    "magento/magento2-base": {
+      "Added a configuration setting \"Include Tax to Amount\": Yes/No in Free Shipping method configuration. When \"Include Tax to Amount\" is set to Yes Minimum Order Amount is calculated as = Subtotal + Tax. When \"Include Tax to Amount\" is set to No Minimum Order Amount is calculated as = Subtotal": {
+        ">=2.3.1 <2.3.5": {
+          "file": "os/MDVA-30837__added_configuration_setting_include_tax_to_amount_in_free_shipping_method_configuration__2.3.4-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-25028": {
+    "magento/magento2-base": {
+      "Fixes the issue when orders that are placed using PayPal Payflow Pro are not set to Suspected Fraud status when fraud filters are triggered.": {
+        ">=2.3.2 <2.3.3": {
+          "file": "os/MDVA-25028__sets_paypal_payflow_pro_orders_to_suspected_fraud_status_when_fraud_filters_are_triggered__2.3.2.patch",
+          "require": ["MDVA-31006"]
+        },
+        ">=2.3.5 <2.3.6": {
+          "file": "os/MDVA-31282__sets_paypal_payflow_pro_orders_to_suspected_fraud_status_when_fraud_filters_are_triggered__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31224": {
+    "magento/magento2-base": {
+      "Improves the performance of the `catalog_product_price` re-index operation for bundle products.": {
+        ">=2.3.3 <2.3.5": {
+          "file": "os/MDVA-31224__improves_performance_of_catalog_product_price_reindex_operation_for_bundle_products__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31321": {
+    "magento/magento2-base": {
+      "Fixes a blank page (error) when \"Show All\" is selected. Elasticsearch returns large list of product ids. In this scenario the order by clause gets converted to an incorrect SQL format.": {
+        ">=2.3.2 <2.3.3 || 2.3.3-p1": {
+          "file": "os/MDVA-31321__fixes_issue_with_wrong_sql_format_that_causes_blank_page_when_selecting_show_all_and_when_using_elasticsearch__2.3.2.patch"
+        },
+        "2.3.3": {
+          "file": "os/MDVA-31321__fixes_issue_with_wrong_sql_format_that_causes_blank_page_when_selecting_show_all_and_when_using_elasticsearch__2.3.3.patch",
+          "require": ["MAGECLOUD-4847"]
+        },
+        ">=2.3.4 <2.3.5": {
+          "file": "os/MDVA-29968_fixes_issue_with_wrong_sql_format_that_causes_blank_page_when_selecting_show_all_and_when_using_elasticsearch__2.3.4-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30815": {
+    "magento/magento2-base": {
+      "Fixes the issue where when you changed how many search results should be displayed on the search results page, Magento displayed a blank page. Elasticsearch now correctly displays results from category pages when you change the number of search results viewed per page.": {
+        ">=2.3.2 <2.3.3": {
+          "file": "os/MDVA-24444__fixes_issue_with_elasticsearch_where_blank_page_is_displayed_when_changing_the_number_of_search_results_viewed_per_page__2.3.2-p2.patch",
+          "require": ["MCLOUD-5684", "MDVA-31321"]
+        },
+        "2.3.3": {
+          "file": "os/MDVA-30815__fixes_issue_with_elasticsearch_where_blank_page_is_displayed_when_changing_the_number_of_search_results_viewed_per_page__2.3.3.patch",
+          "require": ["MAGECLOUD-4847", "MCLOUD-5684"]
+        },
+        "2.3.3-p1": {
+          "file": "os/MDVA-30815__fixes_issue_with_elasticsearch_where_blank_page_is_displayed_when_changing_the_number_of_search_results_viewed_per_page__2.3.3-p1.patch",
+          "require": ["MCLOUD-5684", "MDVA-31321"]
+        }
+      }
+    }
+  },
+  "MDVA-30782": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue when Dynamic Block was displayed regardless of cart rule.": {
+        ">=2.3.5 <2.4.2": {
+          "file": "commerce/MDVA-30782__fixes_issue_where_dynamic_block_was_displayed_regardless_or_the_cart_rule__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31021": {
+    "magento/magento2-base": {
+      "Fixes the issue where performance issues exists in module-catalog-import-export/Model/Import/Product/Option.php. If there are more than ~100k records in catalog_product_option table, a new CSV with single product takes less than 10 sec to validate.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-31021__fixes_performance_issue_during_product_import_when_having_a_large_amount_of_options_in_catalog_product_option_table__2.3.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31007": {
+    "magento/magento2-base": {
+      "Fixes the issue where custom address attributes are not correctly displayed in the order details page in the my account area and in the backend.": {
+        ">=2.3.5 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "os/MDVA-31007__fixes_issue_where_custom_address_attributes_are_not_displayed_correctly_in_the_order_details_page_in_my_account_area_and_in_the_backend__2.4.0.patch",
+          "replaced-with": "MDVA-31007-V2"
+        }
+      }
+    },
+    "magento/magento2-ee-base": {
+      "Fixes the issue where custom address attributes are not correctly displayed in the order details page in the my account area and in the backend.": {
+        ">=2.3.5 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "commerce/MDVA-31007__fixes_issue_where_custom_address_attributes_are_not_displayed_correctly_in_the_order_details_page_in_my_account_area_and_in_the_backend__2.4.0.patch",
+          "replaced-with": "MDVA-31007-V2"
+        }
+      }
+    }
+  },
+  "MDVA-31007-V2": {
+    "magento/magento2-base": {
+      "Fixes the issue where custom address attributes are not correctly displayed in the order details page in the my account area and in the backend.": {
+        ">=2.3.5 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "os/MDVA-31007__fixes_issue_where_custom_address_attributes_are_not_displayed_correctly_in_the_order_details_page_in_my_account_area_and_in_the_backend__2.4.0_v2.patch",
+          "replaced-with": "MDVA-31007-V3"
+        }
+      }
+    },
+    "magento/magento2-ee-base": {
+      "Fixes the issue where custom address attributes are not correctly displayed in the order details page in the my account area and in the backend.": {
+        ">=2.3.5 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "commerce/MDVA-31007__fixes_issue_where_custom_address_attributes_are_not_displayed_correctly_in_the_order_details_page_in_my_account_area_and_in_the_backend__2.4.0_v2.patch",
+          "replaced-with": "MDVA-31007-V3"
+        }
+      }
+    }
+  },
+  "MDVA-31007-V3": {
+    "magento/magento2-base": {
+      "Fixes the issue where custom address attributes are not correctly displayed in the order details page in the my account area and in the backend.": {
+        ">=2.3.4 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "os/MDVA-31007__fixes_issue_where_custom_address_attributes_are_not_displayed_correctly_in_the_order_details_page_in_my_account_area_and_in_the_backend__2.4.0_v3.patch"
+        },
+        "2.4.1": {
+          "file": "os/MDVA-33368__fixes_issue_where_custom_address_attributes_are_not_displayed_correctly_in_the_order_details_page_in_my_account_area_and_in_the_backend__2.4.1.patch"
+        }
+      }
+    },
+    "magento/magento2-ee-base": {
+      "Fixes the issue where custom address attributes are not correctly displayed in the order details page in the my account area and in the backend.": {
+        ">=2.3.4 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "commerce/MDVA-31007__fixes_issue_where_custom_address_attributes_are_not_displayed_correctly_in_the_order_details_page_in_my_account_area_and_in_the_backend__2.4.0_v3.patch"
+        },
+        "2.4.1": {
+          "file": "commerce/MDVA-33368__fixes_issue_where_custom_address_attributes_are_not_displayed_correctly_in_the_order_details_page_in_my_account_area_and_in_the_backend__2.4.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29389": {
+    "magento/magento2-base": {
+      "Fixes the issue with Advanced Reporting where the analytics_collect_data cronjob says: \"Port must be configured within host parameter (like localhost:3306)\".": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-29389__fixes_error_port_must_be_configured_within_host_parameter_for_advance_reporting__2.3.4_v1.composer.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31343": {
+    "magento/magento2-base": {
+      "Fixes the issue with the removed body class \"page-layout-category-full-width\" when a category is scheduled.": {
+        ">=2.3.4 <2.3.6": {
+          "file": "os/MDVA-31343__fixes_issue_with_removed_body_class_page-layout-category-full-width_when_a_category_is_scheduled__2.3.5-p2.patch"
+        }
+      }
+    },
+    "magento/magento2-ee-base": {
+      "Fixes the issue with the removed body class \"page-layout-category-full-width\" when a category is scheduled.": {
+        ">=2.3.4 <2.3.6": {
+          "file": "commerce/MDVA-31343__fixes_issue_with_removed_body_class_page-layout-category-full-width_when_a_category_is_scheduled__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30945": {
+    "magento/magento2-base": {
+      "Fixes the issue where you receive a fatal error message when updating carts \"Call to a member function getValue() on null in module-configurable-product CartItemProcessor.php\".": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-30945__fixes_fatal_error_in_module-configurable-product_cartitemprocessor__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31242": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where a wrong currency sign is displayed in Credit Memo grid.": {
+        ">=1.1.0 <1.2.1": {
+          "file": "commerce/MDVA-31242__fixed_case_with_getting_collection_size__2.4.0.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31295": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue where reward points are not calculated when a partial order is completed and items are taxed.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "commerce/MDVA-31295__fixes_reward_points_are_not_calculated__2.3.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30112": {
+    "magento/inventory-composer-metapackage": {
+      "Fixes the issue where if the number of orders exceeds the \"bunch-size\" value, Magento considers the orders with \"pending\" status as inconsistencies.": {
+        ">=1.1.4 <1.1.6": {
+          "file": "os/MDVA-30112__fixes_the_issue_with_order_pending_status_is_inconsistency__2.3.5.patch"
+        }
+      }
+    },
+    "magento/inventory-metapackage": {
+      "Fixes the issue where if the number of orders exceeds the \"bunch-size\" value, Magento considers the orders with \"pending\" status as inconsistencies.": {
+        ">=1.2.0 <1.2.2": {
+          "file": "os/MDVA-30112__fixes_the_issue_with_order_pending_status_is_inconsistency__2.3.5.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31150": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue where the store credit and gift card balances are not returned by the GET Invoice Rest API call, when the invoice was posted by Rest API call and the order was partially paid by store credit and gift card accounts.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "commerce/MDVA-31150__fixes_issue_when_store_credit_and_gift_card_are_not_return__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-29954": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where the \"New Company Registration Request\" and \"You've been linked to a company\" emails are sent from the wrong address.": {
+        ">=1.1.0 <1.1.6 || 1.2.0 || 1.3.0": {
+          "file": "commerce/MDVA-29954__fixes_emails_were_sent_from_wrong_address__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28357": {
+    "magento/magento2-base": {
+      "Replaces the standard analyzer with a custom analyzer with keyword tokenizer for the SKU field in the ElasticSearch index, to make wildcard search queries work with SKUs containing a hyphen (\"-\").": {
+        ">=2.3.2 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "os/MDVA-28357__fixes_the_issue_SKU_search_in_advanced_search__2.3.4-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30963": {
+    "magento/magento2-base": {
+      "Fixes the issue where products filtering results set to only contain values specified for 'All store views' scope in Admin, include products with values overridden on the store view level.": {
+        ">=2.3.3 <2.4.2": {
+          "file": "os/MDVA-30963__fixes_admin_product_search_filter__2.4.0.patch"
+        },
+        ">=2.3.2 <2.3.3": {
+          "file": "os/MDVA-32010__fixes_admin_product_search_filter__2.3.2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31363": {
+    "magento/magento2-base": {
+      "Fixes the issue where the Cart Price Rule with coupon does not apply via GraphQL when 'Fixed amount discount for whole cart' action is used.": {
+        ">=2.3.2 <2.3.4": {
+          "file": "os/MDVA-31363__fixes_cart_price_rule_coupon_does_not_apply_via_graphQl__2.4.0.patch"
+        },
+        ">=2.3.4 <2.4.2": {
+          "file": "os/MDVA-31363__fixes_cart_price_rule_coupon_does_not_apply_via_graphQl__2.4.0.patch",
+          "replaced-with": "MDVA-33975"
+        }
+      }
+    }
+  },
+  "MDVA-30889": {
+    "magento/inventory-composer-metapackage": {
+      "Fixes the issue where an error occurs after invoicing a bundle with virtual and simple products as options.": {
+        ">=1.0.2 <=1.1.6": {
+          "file": "os/MDVA-30889__fixes_invoicing_a_bundle_with_virtual_and_simple_option__2.3.4.patch"
+        }
+      }
+    },
+    "magento/inventory-metapackage": {
+      "Fixes the issue where an error occurs after invoicing a bundle with virtual and simple products as options.": {
+        ">=1.2.0 <1.2.2": {
+          "file": "os/MDVA-30889__fixes_invoicing_a_bundle_with_virtual_and_simple_option__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31791": {
+    "magento/magento2-ee-base": {
+      "Improves the performance of the product page in cases when target rules or linked products are used.": {
+        ">=2.4.0 <2.4.1": {
+          "file": "commerce/MDVA-31791__improved_performance_of_the_product_page_when_target_rule_used__2.4.0.patch"
+        },
+        ">=2.3.4 <2.3.5": {
+          "file": "commerce/MDVA-29636__improved_performance_of_the_product_page_when_target_rule_used__2.3.4.patch"
+        }
+      }
+    },
+    "magento/magento2-base": {
+      "Improves the performance of the product page in cases when target rules or linked products are used.": {
+        ">=2.3.4 <2.3.5": {
+          "file": "os/MDVA-29636__improved_performance_of_the_product_page_when_target_rule_used__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31168": {
+    "magento/magento2-base": {
+      "Fixes the issue where the product export CSV file does not appear, and there is a memory allocation error.": {
+        ">=2.3.5 <2.4.2": {
+          "file": "os/MDVA-31168__fixed_product_export_fails_with_memory_allocation_error__2.3.5-p2.patch",
+          "replaced-with": "MDVA-31168-V2"
+        },
+        ">=2.3.0 <2.3.5": {
+          "file": "os/MDVA-31673__fixed_product_export_fails_with_memory_allocation_error__2.3.2.patch",
+          "replaced-with": "MDVA-31168-V2"
+        }
+      }
+    }
+  },
+  "MDVA-31168-V2": {
+    "magento/magento2-base": {
+      "Fixes the issue where the product export CSV file does not appear, and there is a memory allocation error.": {
+        ">=2.3.5 <2.4.2": {
+          "file": "os/MDVA-30942__fixes_performance_when_exporting_100k_products_using_consumers__2.3.5-p2.patch"
+        },
+        ">=2.3.0 <2.3.5": {
+          "file": "os/MDVA-31673__fixed_product_export_fails_with_memory_allocation_error__2.3.2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32313": {
+    "magento/magento2-base": {
+      "Fixes the issue where configurable products could be added to the wishlist with the wrong configuration options.": {
+        ">=2.3.0 <2.3.4": {
+          "file": "os/MDVA-32313__fixes_wrong_configuration_option_added_to_whishlist__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31759": {
+    "magento/magento2-base": {
+      "Fixes the issue where products are not updated with `dropdown` and `textarea` attribute values during CSV import.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-31759__attribute_values_were_not_updated_during_import__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32012": {
+    "magento/magento2-base": {
+      "Fixes the issue where zip codes in Korea and Argentina cannot be validated.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-32012__updates_Korean_and_Argentina_zip_code_validation__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31640": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue where a special price cannot be updated via REST API.": {
+        ">=2.3.1 <2.3.6 || >=2.4.0 <2.4.1": {
+          "file": "commerce/MDVA-31640__fixes_bug_updating_a_special_price_via_REST__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28651": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where there are performance problems with loading negotiable quotes via REST API.": {
+        ">=1.1.0 <1.1.6 || 1.2.0 || >=1.3.0 <1.3.1": {
+          "file": "commerce/MDVA-28651__performance_improvement_for_loadins_Quotes_via_REST__2.3.4.patch",
+          "replaced-with": "MDVA-28651-V2"
+        }
+      }
+    },
+    "magento/magento2-base": {
+      "Fixes the issue where there are performance problems with loading negotiable quotes via REST API.": {
+        ">=2.3.0 <2.3.6 || 2.4.0 || >=2.4.1 <2.4.2": {
+          "file": "os/MDVA-28651__performance_improvement_for_loadins_Quotes_via_REST__2.3.4.patch",
+          "replaced-with": "MDVA-28651-V2"
+        }
+      }
+    }
+  },
+  "MDVA-28651-V2": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where there are performance problems with loading negotiable quotes via REST API.": {
+        ">=1.1.0 <1.1.6 || 1.2.0 || >=1.3.0 <1.3.1": {
+          "file": "commerce/MDVA-28651__performance_improvement_for_loading_quotes_via_REST__2.3.4_v2.patch"
+        }
+      }
+    },
+    "magento/magento2-base": {
+      "Fixes the issue where there are performance problems with loading negotiable quotes via REST API.": {
+        ">=2.3.0 <2.3.6 || 2.4.0 || >=2.4.1 <2.4.2": {
+          "file": "os/MDVA-28651__performance_improvement_for_loading_quotes_via_REST__2.3.4_v2.patch"
+        }
+      }
+    }
+  },
+  "MC-38509": {
+    "magento/magento2-base": {
+      "Fixes the issue where the `Create an Account` button stays disabled after correcting invalid data in the `Create New Customer Account` form.": {
+        "2.3.6 || 2.4.1": {
+          "file": "os/MC-38509__fixes_create_account_submit_button_state_after_form_validation__2.4.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31399": {
+    "magento/magento2-base": {
+      "Adds the \"Subtotal (Incl. Tax)\" option to price rule conditions.": {
+        ">=2.3.2 <2.4.2": {
+          "file": "os/MDVA-31399__adds_new_option_subtotal_including_tax_to_cart_price_rule_condition__2.3.5-p2_v1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31236": {
+    "magento/security-package": {
+      "Fixes the issue where Magento Admins with custom resource access are not able to set up 2FA or log in.": {
+        ">=1.0.0 <1.2.0": {
+          "file": "os/MDVA-31236__fixes_issue_when_administrators_with_custom_resource_access_cannot_setup_2fa_or_log_in__2.4.0.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30845": {
+    "magento/magento2-base": {
+      "Fixes the issue where the \"Sorry, no quotes are available for this order at this time\" error is displayed when failing to connect to UPS XML/USPS/DHL, and no other shipping method is available.": {
+        ">=2.3.5 <2.3.7": {
+          "file": "os/MDVA-30845__fixes_error_when_failing_to_connect_to_ups_xml_usps_dhl_and_other_shipping_method_is_not_available__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32133": {
+    "magento/module-page-builder": {
+      "Fixes the issue where media gallery is not loading from Page Builder in certain cases.": {
+        ">=1.4.0 <1.5.0": {
+          "file": "commerce/MDVA-32133__fixes_issue_when_media_gallery_is_not_loaded_from_page_builder_in_certain_cases__2.4.0.patch"
+        }
+      }
+    }
+  },
+  "MDVA-12304": {
+    "magento/magento2-base": {
+      "Increases the maximum number of cookies from 50 to 200.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-12304__increases_maximum_number_of_cookies_from_50_to_200__2.2.5.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32632": {
+    "magento/magento2-base": {
+      "Fixes the issue where orders appear in the payment system, but not in Magento.": {
+        ">=2.3.2 <2.3.3": {
+          "file": "os/MDVA-32632__fixes_issue_when_orders_appeared_in_the_payment_system_but_not_in_Magento__2.3.2-p2.patch"
+        },
+        ">=2.3.3 <2.3.5": {
+          "file": "os/MDVA-23773__fixes_issue_when_orders_appeared_in_the_payment_system_but_not_in_Magento__2.3.3.patch"
+        },
+        "2.3.6 || 2.4.1": {
+          "file": "os/MDVA-30524__fixes_issue_when_orders_appeared_in_the_payment_system_but_not_in_Magento__2.3.6.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32449": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where the order history loads very slowly or does not load at all.": {
+        ">=1.1.0 <1.1.6 || 1.2.0 || >=1.3.0 <1.3.1": {
+          "file": "commerce/MDVA-32449__fixes_issue_where_order_history_loads_slow_or_does_not_load_at_all__2.4.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32739": {
+    "magento/magento2-base": {
+      "Fixes the issue where enabling Asynchronous Email Notifications sends out old sales emails.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-32739__fixes_issue_where_enabling_asynchronous_email_notifications_sends_out_old_sales_emails__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-30858": {
+    "magento/magento2-base": {
+      "Fixes the issue with PayPal Settlement reports not being available under Reports > Sales > PayPal Settlement as expected.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-30858__fixes_the_issue_with_PayPal_Settlement_reports_not_available__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MCP-87": {
+    "magento/magento2-base": {
+      "Improved indexation time for category product and stock indexers for large profiles.": {
+        ">=2.3.1 <2.4.2": {
+          "file": "os/MCP-87__improved_indexation_time_for_category_product_and_stock_indexers__2.3.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-33106": {
+    "magento/magento2-ee-base": {
+      "Fixes the issue where the rescheduled product changes are erased after the cron 'run' command is executed.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "commerce/MDVA-33106__fixes_the_issue_where_the_rescheduled_product_changes_are_erased_after_the_cron__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-19391": {
+    "magento/module-page-builder": {
+      "Fixes the issue where analytics_collect_data is throwing an error due to NULL description records in the catalog_category_entity_text table.": {
+        ">=1.0.0 <1.3.0": {
+          "file": "commerce/MDVA-19391__fixes_the_issue_where_analytics_collect_data_is_throwing_an_error_due_to_NULL_description__2.3.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-20376": {
+    "magento/magento2-base": {
+      "Fixes the issue with the 'No such entity with customerId = 1' error in the exception.log for logged in customers after order placement.": {
+        ">=2.3.2 <2.3.4": {
+          "file": "os/MDVA-20376__fixes_the_issue_No_such_entity_with_customerId__2.3.2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-23764": {
+    "magento/magento2-base": {
+      "Fixes the bug in JsFooterPlugin.php that affects the display of dynamic blocks.": {
+        ">=2.3.2 <2.3.5": {
+          "file": "os/MDVA-23764__fixes_the_bug_in_JsFooterPlugin__2.3.3.patch"
+        }
+      }
+    },
+    "magento/magento2-ee-base": {
+      "Fixes the bug in JsFooterPlugin.php that affects the display of dynamic blocks.": {
+        ">=2.3.2 <2.3.5": {
+          "file": "commerce/MDVA-23764__fixes_the_bug_in_JsFooterPlugin__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-13203": {
+    "magento/magento2-base": {
+      "Fixes the issue where the 'Integrity constrain violation search_tmp_* table' error appears after a full reindex.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-13203__Fixes_ann_error_integrity_constrain_violation_search_tmp___2.2.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-23426": {
+    "magento/magento2-base": {
+      "Fixes the issue where notification emails sent by Magento contain a blank body with content being added as attachment.": {
+        ">=2.3.3 <2.3.5": {
+          "file": "os/MDVA-23426__fixes_the_notification_emails_contain_a_blank_body__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-22150": {
+    "magento/magento2-base": {
+      "Fixes the issue where customers with a configurable product in cart and a coupon applied, cannot login if that configurable product is disabled in Admin.": {
+        ">=2.3.1 <2.3.4": {
+          "file": "os/MDVA-22150__fixes_the_customer_cannot_login_after_disabling_a_configurable_product__2.3.2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32545": {
+    "magento/magento2-base": {
+      "Fixes the issue where invoices are not sent out automatically when creating orders from Admin.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-32545__fixes_the_issue_where_invoices_are_not_sent_out_automatically__2.3.2-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32714": {
+    "magento/magento2-base": {
+      "Fixes the issue where customer group price is not working in GraphQL product query.": {
+        ">=2.3.4 <2.4.1": {
+          "file": "os/MDVA-32714__fixes_the_issue_where_customer_group_price_is_not_working_in_GraphQL__2.4.0.patch",
+          "replaced-with": "MDVA-33975"
+        }
+      }
+    }
+  },
+  "MDVA-31969": {
+    "magento/magento2-base": {
+      "Fixes the issue with duplicated images after product import from a .csv file.": {
+        ">=2.3.3 <2.3.4": {
+          "file": "os/MDVA-33223__fixes_the_issue_with_duplicated_image_after_product_import_from_a_csv_file__2.3.3.patch"
+        },
+        ">=2.3.4 <2.3.5": {
+          "file": "os/MDVA-31969__fixes_the_issue_with_duplicated_image_after_product_import_from_a_csv_file__2.3.4-p2.patch"
+        },
+        ">=2.4.0 <2.4.2": {
+          "file": "os/MDVA-33255__fixes_the_issue_with_duplicated_image_after_product_import_from_a_csv_file__2.4.1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-33382": {
+    "magento/magento2-base": {
+      "Fixes the issues with indexers invalidation after products removal from a category.": {
+        ">=2.3.0 <2.4.2": {
+          "file": "os/MDVA-33382__fixes_the_issues_with_indexers_invalidation_after_products_removal_from_a_category__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-28511": {
+    "magento/magento2-base": {
+      "Fixes the issue where it is not possible to complete PayPal checkout, if the Name field contains certain characters (like accented capital letters).": {
+        ">=2.3.5 <2.3.6": {
+          "file": "os/MDVA-28511__fixes_the_issue_where_it_is_not_possible_to_complete_PayPal_checkout_if_the_Name_field_contains_certain_characters__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-31519": {
+    "magento/magento2-base": {
+      "Fixes the issue with wait timeouts in guest checkout when a site-wide sales rule is in use.": {
+        ">=2.3.5 <2.3.6": {
+          "file": "os/MDVA-31519__fixes_the_issue_with_wait_timeouts_in_guest_checkout_when_a_site-wide_sales_rul_is_in_use__2.3.5-p2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-33281": {
+    "magento/inventory-composer-metapackage": {
+      "Fixes the issue where there is a fatal error in 'inventory:reservation:list-inconsistencies' because of wrong SKU parameter type.": {
+        ">=1.1.4 <1.1.6": {
+          "file": "os/MDVA-33281__fixes_the_issue_where_there_is_a_fatal_error_in_inventory:reservation:list-inconsistencies_because_of_wrong_SKU_parameter_type__2.3.5-p1.patch"
+        }
+      }
+    }
+  },
+  "MDVA-24201": {
+    "magento/magento2-base": {
+      "Fixes the issue where prices do not reflect the scheduled cart price rule until manually re-indexed.": {
+        ">=2.3.0 <2.3.5": {
+          "file": "os/MDVA-24201__fixes_the_issue_where_prices_do_not_reflect_the_scheduled_cart_price_rule_until_manually_re-indexed__2.3.3.patch"
+        }
+      }
+    }
+  },
+  "MDVA-32694": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where an admin user cannot add a product to a negotiable quote, if it is related to a not default store.": {
+        ">=1.1.0 <1.1.6 || >= 1.2.0 < 1.4.0": {
+          "file": "commerce/MDVA-32694__fixes_the_issue_where_an_admin_user_cannot_add_a_product_to_a_negotiable_quote_if_it_is_related_to_a_not_default_store__2.3.2.patch"
+        }
+      }
+    }
+  },
+  "MDVA-33516": {
+    "magento/magento2-b2b-base": {
+      "Fixes the issue where editing a bundle product in a requisition list leads to an error.": {
+        ">=1.1.0 <1.1.6": {
+          "file": "commerce/MDVA-33516__fixes_the_issue_where_editing_a_bundle_product_in_a_requisition_list_leads_to_an_error__2.3.4.patch"
+        }
+      }
+    }
+  },
+  "MDVA-33975": {
+    "magento/magento2-base": {
+      "Fixes multiple issues related to price calculation in GraphQL requests.": {
+        ">=2.3.4 <2.3.6": {
+          "file": "os/MDVA-33975__fixes_multiple_issues_related_to_price_calculation_in_GraphQL_requests__2.3.5.patch"
+        },">=2.3.6 <2.4.1": {
+          "file": "os/MDVA-33975__fixes_multiple_issues_related_to_price_calculation_in_GraphQL_requests__2.4.0.patch"
+        },
+        ">=2.4.1 <2.4.2": {
+          "file": "os/MDVA-33975__fixes_multiple_issues_related_to_price_calculation_in_GraphQL_requests__2.4.1.patch"
+        }
+      }
+    },
+    "magento/magento2-ee-base": {
+      "Fixes multiple issues related to price calculation in GraphQL requests.": {
+        ">=2.3.4 <2.3.6": {
+          "file": "commerce/MDVA-33975__fixes_multiple_issues_related_to_price_calculation_in_GraphQL_requests__2.3.5.patch"
+        },
+        ">=2.3.6 <2.4.1": {
+          "file": "commerce/MDVA-33975__fixes_multiple_issues_related_to_price_calculation_in_GraphQL_requests__2.4.0.patch"
+        },
+        ">=2.4.1 <2.4.2": {
+          "file": "commerce/MDVA-33975__fixes_multiple_issues_related_to_price_calculation_in_GraphQL_requests__2.4.1.patch"
+        }
+      }
+    }
+  }
+}
